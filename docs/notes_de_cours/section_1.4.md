@@ -75,9 +75,13 @@ Pour créer la table Étudiant correspondant au modèle suivant.
 
 ``` mermaid
 erDiagram  
-{
-    !etudiants.mermaid!
-}
+    etudiants {
+        INTEGER code
+        VARCHAR(255) nom
+        YEAR annee_admission 
+        DATETIME date_naissance
+        VARCHAR(10) programme
+    }
 ```
 
 ```mysql
