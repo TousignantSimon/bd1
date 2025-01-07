@@ -55,7 +55,8 @@ def generer_grille(fichier, nom_feuille):
             if "colspan" in valeur:
                 has_colspan = True
 
-    grille.append(ligne)
+        grille.append(ligne)
+
     return grille
 
     #fin generer_grille(fichier, nom_feuille)
