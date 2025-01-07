@@ -75,7 +75,13 @@ Pour créer la table Étudiant correspondant au modèle suivant.
 
 ``` mermaid
 erDiagram  
-{!etudiants.mermaid!}
+    etudiants {
+        INTEGER code
+        VARCHAR(255) nom
+        YEAR annee_admission 
+        DATETIME date_naissance
+        VARCHAR(10) programme
+    }
 ```
 
 ```mysql
@@ -106,8 +112,10 @@ DESCRIBE nom_table;
 Créez la table représentant le modèle suivant.
 
 ``` mermaid
-erDiagram  
-{!programmes.mermaid!}
+erDiagram
+{
+    !programmes.mermaid!
+}
 ```
 
 Afficher la structure de la table après la création pour vous valider votre opération.
@@ -119,8 +127,10 @@ On note sur le modèle de base de données le type de données associé au champ
 Par exemple, pour la table Étudiant, le modèle correspond maintenant à 
 
 ``` mermaid
-erDiagram  
-{!etudiants.mermaid!}
+erDiagram
+{
+    !etudiants.mermaid!
+}
 ```
 
 ## Supprimer une table
