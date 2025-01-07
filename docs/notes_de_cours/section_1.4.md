@@ -106,7 +106,7 @@ DESCRIBE nom_table;
 Créez la table représentant le modèle suivant.
 
 ``` mermaid
-erDiagram  
+erDiagram
 {!programmes.mermaid!}
 ```
 
@@ -119,7 +119,7 @@ On note sur le modèle de base de données le type de données associé au champ
 Par exemple, pour la table Étudiant, le modèle correspond maintenant à 
 
 ``` mermaid
-erDiagram  
+erDiagram
 {!etudiants.mermaid!}
 ```
 
