@@ -55,6 +55,12 @@ def generer_grille(fichier, nom_feuille):
             if "colspan" in valeur:
                 has_colspan = True
 
+        # si le fichier excel n'a pas d'heure définie pour une date
+        # simplement retirer l'heure. 
+        # TODO : "Futur proof" - Heures de remise des travaux.
+        if  " 00:00:00" in ligne:
+            ligne = ligne.replace(" 00:00:00","")
+
         grille.append(ligne)
 
     return grille
